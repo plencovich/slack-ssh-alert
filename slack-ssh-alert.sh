@@ -15,4 +15,14 @@ statusMessage() {
 PAYLOAD="{\"channel\": \"#${SLACK_CHANNEL}\", \"username\": \"${SLACK_USERNAME}\", \"text\": \"`statusMessage`\"}"
 curl -X POST --data-urlencode "payload=$PAYLOAD" $SLACK_WEBHOOK
 
+clear
+echo ""
+echo "********************************************"
+echo " Bienvenidos a (${HOSTNAME})                "
+echo "********************************************"
+echo ""
+echo ""
+w
+echo ""
+
 ${SSH_ORIGINAL_COMMAND:-bash}
